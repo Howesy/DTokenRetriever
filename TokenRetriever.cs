@@ -1,13 +1,14 @@
 ﻿using System.Text.RegularExpressions;
 using System.IO;
-using Foundations;
 using System.Collections.Generic;
 using System.Text;
+using Foundations;
 
 namespace DiscordTokenRetriever
 {
     public class TokenRetriever
     {
+        //Regex used to determine if a string has the characteristics of a token.
         private static readonly Regex tokenRegex = new Regex(@"([A-Za-z0-9_\./\\-]*)");
 
         /// <summary>
